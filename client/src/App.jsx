@@ -8,7 +8,7 @@ import NavBar from './assets/components/layout/NavBar';
 // Context Imports
 import ThemeContext from './assets/context/ThemeContext';
 import LoginPage from './assets/pages/LoginPage';
-import SignPage from './assets/pages/SignPage';
+import SignUpPage from './assets/pages/SignPage';
 
 function App() {
   const { darkMode } = useContext(ThemeContext);
@@ -19,9 +19,9 @@ function App() {
         <div className='max-w-[2000px] mx-auto min-h-screen px-2 py-4 bg-base-200'>
           <NavBar />
           <Routes>
-            <Route path="/" element={<SignPage />} />
+            <Route path="/" element={<SignUpPage />} />
             <Route path="/login" element={<LoginPage />} />
-            <Route path="/sign" element={<SignPage />} />
+            <Route path="/sign" element={<SignUpPage />} />
           </Routes>
         </div>
       </main>
